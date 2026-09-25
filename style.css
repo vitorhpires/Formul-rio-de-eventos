@@ -1,0 +1,182 @@
+
+/* RESET CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FUNDO DA PÁGINA */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E5E5E5;
+    color: #202b43;
+}
+
+/* CABEÇALHO PRETO */
+
+.cabecalho {
+    background-color: #121214;
+    color: white;
+    padding: 35px 20px 100px;
+}
+
+.conteudo {
+    max-width: 600px;
+    margin: auto;
+}
+
+.cabecalho h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.cabecalho p {
+    font-size: 15px;
+    color: #42D3FF;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+/* FUNDO DO FORMULÁRIO */
+
+.formulario {
+    background-color: #FFFFFF;
+    max-width: 610px;
+    margin: -65px auto 50px;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+/* ÁREA DAS INFORMAÇÕES */
+
+.informacoes {
+    background-color: #D6D6D6;
+    padding: 30px;
+    border-radius: 7px;
+}
+
+h2 {
+    font-size: 21px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #bcc5d3;
+}
+
+/* CAMPOS */
+
+.campo {
+    margin-bottom: 22px;
+}
+
+.campo label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.campo span {
+    color: #7c879b;
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 8px;
+}
+
+.campo input,
+.campo textarea,
+.campo select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd5e5;
+    border-radius: 5px;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.campo textarea {
+    height: 125px;
+    resize: vertical;
+}
+
+/* CAMPO WHATSAPP */
+
+.campo .whatsapp {
+    border-color: #ff5a5a;
+}
+
+/* PRIVACIDADE */
+
+.privado {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 35px;
+    font-size: 14px;
+}
+
+.privado input {
+    width: 17px;
+    height: 17px;
+}
+
+/* DATA E HORA */
+
+.data-hora {
+    display: flex;
+    gap: 20px;
+}
+
+.data-hora .campo {
+    flex: 1;
+    min-width: 0;
+}
+
+.data-hora .campo:first-child {
+    flex: 2;
+}
+
+/* BOTÃO */
+
+button {
+    width: 100%;
+    background-color: #08c55b;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #08a94f;
+}
+
+/* CELULARES */
+
+@media (max-width: 650px) {
+
+    .formulario {
+        margin: -65px 15px 30px;
+        padding: 10px;
+    }
+
+    .informacoes {
+        padding: 20px;
+    }
+
+    .data-hora {
+        gap: 10px;
+    }
+
+    .campo span {
+        display: block;
+        margin: 5px 0 0;
+    }
+}
